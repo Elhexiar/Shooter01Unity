@@ -6,25 +6,42 @@ using TMPro;
 
 public class PlayerScript : MonoBehaviour
 {
-    public GameObject bullet;
+
+    // player Movement
     public Transform parent;
     public Transform limitL;
     public Transform limitR;
+
+    // PlayerStats
+
     public int Score = 0;
     public float attackCooldownLimit = 50;
     public float attackCooldown = 0;
     public int level = 0;
-    public float bulletSpawnOffset = 5;
+    public int streak = 0;
+    public int streakLimit = 5;
+
+    // Player Nuke
+
     public GameObject nuke;
     public bool nukeReady = false;
     public float nukeExpansionRate = 1.01f;
+
+    // Projectiles
+    public GameObject bullet;
+    public float bulletSpawnOffset = 5;
+    public ParticleSystem shootingParticleSystem;
+    public float particleOffsett;
+
+
+    // UI
+
     public TextMeshProUGUI ScoreUIRef;
     public TextMeshProUGUI nukeUIRef;
     public TextMeshProUGUI timerUIRef;
-    public int streak = 0;
-    public int streakLimit = 5;
-    public ParticleSystem shootingParticleSystem;
-    public float particleOffsett;
+    
+    // Timer
+    
     private float timer= 0 ;
 
 

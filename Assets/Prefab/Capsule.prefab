@@ -162,10 +162,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c9e90b22d5293a4894afc94eb6acbc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  monRigidBody: {fileID: 6863447708074395207}
+  myRigidBody: {fileID: 6863447708074395207}
   speed: 12
   powerUp: {fileID: 3087744766393041514, guid: 18a0253e2586ef84bb999a394d68e5fd, type: 3}
   parent: {fileID: 0}
+  myPlayer: {fileID: 0}
+  particleOffset: {x: 0, y: 0, z: 0}
+  hitParticleSystem: {fileID: 0}
 --- !u!96 &5144115588052714144
 TrailRenderer:
   serializedVersion: 3

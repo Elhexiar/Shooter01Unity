@@ -24,18 +24,17 @@ public class NukeBehavior : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("coucou");  
         if (collision.gameObject.tag == "Triangle")
         {
             Destroy(collision.gameObject);
-            //GameObject createdPowerUp = Instantiate(powerUp, collision.gameObject.transform.position, collision.gameObject.transform.rotation);
+         
         }
 
         if (collision.gameObject.tag != "Player" && collision.gameObject.tag != "powerUp")
         {
             myPlayer.Score += 10;
             Destroy(collision.gameObject);
-            //Destroy(gameObject);
+        
         }
 
     }

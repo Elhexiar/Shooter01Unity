@@ -19,11 +19,11 @@ public class EnnemieManager : MonoBehaviour
         {
             GameObject spawnedEnnemie = Instantiate(ennemie, transform.localPosition + Vector3.left *spawnOffset* i, transform.localRotation);
 
-            spawnedEnnemie.GetComponent<EnnemieFall>().dephasage = itteration;
+            spawnedEnnemie.GetComponent<EnnemieFall>().phase = itteration;
 
             spawnedEnnemie = Instantiate(ennemie, transform.localPosition + Vector3.right * spawnOffset * i, transform.localRotation);
 
-            spawnedEnnemie.GetComponent<EnnemieFall>().dephasage = itteration;
+            spawnedEnnemie.GetComponent<EnnemieFall>().phase = itteration;
         }
         
 

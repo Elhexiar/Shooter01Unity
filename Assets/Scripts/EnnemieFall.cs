@@ -8,7 +8,7 @@ public class EnnemieFall : MonoBehaviour
     public Vector3 spawnPoint;
     public float sineSpeed;
     public float amplitude;
-    public float dephasage = 0;
+    public float phase = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,6 +19,6 @@ public class EnnemieFall : MonoBehaviour
     void Update()
     {
         //transform.position += Vector3.down * fallingRate;
-        transform.position = new Vector3(spawnPoint.x + Mathf.Sin(Time.time * sineSpeed + dephasage) * amplitude,transform.position.y -  fallingRate, 0);
+        transform.position = new Vector3(spawnPoint.x + Mathf.Sin(Time.time * sineSpeed + phase) * amplitude,transform.position.y -  fallingRate, 0);
     }
 }
