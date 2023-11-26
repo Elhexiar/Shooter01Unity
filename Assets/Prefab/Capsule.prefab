@@ -168,7 +168,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   myPlayer: {fileID: 0}
   particleOffset: {x: 0, y: 0, z: 0}
-  hitParticleSystem: {fileID: 0}
+  hitParticleSystem: {fileID: 5456051322709044387, guid: 771e2efed6444044abca9f2bc08bf8f7, type: 3}
 --- !u!96 &5144115588052714144
 TrailRenderer:
   serializedVersion: 3
